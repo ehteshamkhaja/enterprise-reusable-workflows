@@ -62,7 +62,7 @@ on:
         description: "The image tag is published"
         value: ${{ jobs.docker-build-publish.outputs.branch_tag }}
   
-  jobs:
+jobs:
     compile:
       name: Compile
       runs-on: ubuntu-latest
